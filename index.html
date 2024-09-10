@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="registerform">
+        <h1>REGISTRATION</h1>
+        <div class="container">
+            <form action="https://webhook.site" method="get">
+                <label for="inputName">Your name:<sup style="color: red;">*</sup></label><br>
+                <input type="text" name="inputName" id="inputName" required>
+                <br>
+                <label for="inputsurname">Your surname:</label><br>
+                <input type="text" name="inputsurname" id="inputsurname">
+                <br>
+                <label for="inputemail">Your email:<sup style="color: red;">*</sup></label><br>
+                <input type="email" name="inputemail" id="inputemail" required>
+                <br>
+                <label for="inputpwd">Your password:<sup style="color: red;">*</sup></label><br>
+                <input type="password" name="inputpwd" id="inputpwd" required>
+                <br>
+                <label for="checkpwd">Your password again:<sup style="color: red;">*</sup></label><br>
+                <input type="password" name="checkpwd" id="checkpwd" required>
+                <br>
+                <label for="inputdate">your birthday:</label><br>
+                <input type="date" name="inputdate" id="inputdate" required>
+                <br>
+                <label for="inputnumber">your phone number:</label><br>
+                <label for="inputnumber">format: 012-123-1234</label><br>
+                <input type="tel" name="inputnumber" id="inputnumber" pattern="[0]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}" required>
+
+                <button type ="submit" class="button">send</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
