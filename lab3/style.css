@@ -1,0 +1,62 @@
+
+.all {
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+}
+
+.leftcolomn {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 700px;
+    border: 3px solid blue;
+    align-items: center;
+}
+
+
+.utube, .menu, .me, .subs {
+    width: 180px;
+    border: 3px solid red;
+}
+
+.utube {
+    height: 40px;
+}
+
+.menu {
+    height: 200px;
+}
+
+.me {
+    height: 250px;
+}
+
+.subs {
+    height: 250px;
+}
+
+.centercolomn {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    height: 700px;
+}
+
+.search {
+    width: 1280px;
+    height: 40px;
+    border: 3px solid blue;
+}
+
+.altmenu {
+    width: 1280px;
+    height: 50px;
+    border: 3px solid black;
+}
+
+.main {
+    width: 1280px;
+    height: 610px;
+    border: 3px solid blue;
+}
