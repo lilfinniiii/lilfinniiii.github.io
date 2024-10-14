@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   YouTube Clone
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+
+ </head>
+ <body>
+  <div class="header">
+   <div class="logo">
+    <img alt="YouTube Logo" height="30" src="https://storage.googleapis.com/a1aa/image/yCeH5NzS6pyKMytFGcneoePufjkm9mjS1vnjgP90KhWedwncC.jpg" width="100"/>
+   </div>
+   <div class="search-bar">
+    <input placeholder="Пошук" type="text"/>
+    <button>
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </div>
+   <div class="icons">
+    <i class="fas fa-video">
+    </i>
+    <i class="fas fa-bell">
+    </i>
+    <i class="fas fa-user-circle">
+    </i>
+   </div>
+  </div>
+  <div class="sidebar">
+   <div class="menu-item active">
+    <i class="fas fa-home">
+    </i>
+    Головна
+   </div>
+   <div class="menu-item">
+    <i class="fas fa-play-circle">
+    </i>
+    YouTube Shorts
+   </div>
+   <div class="menu-item">
+    <i class="fas fa-play">
+    </i>
+    Підписки
+   </div>
+   <div class="menu-item">
+    <i class="fas fa-music">
+    </i>
+    YouTube Music
+   </div>
+   <div class="menu-item">
+    <i class="fas fa-history">
+    </i>
+    Історія
+   </div>
+   <div class="menu-item">
+    <i class="fas fa-video">
+    </i>
+    Ваші відео
+   </div>
+   <div class="menu-item">
+    <i class="fas fa-clock">
+    </i>
+    Переглянути пізніше
+   </div>
+   <div class="menu-item">
+    <i class="fas fa-download">
+    </i>
+    Завантаження
+   </div>
+   <div class="menu-item">
+    <i class="fas fa-ellipsis-h">
+    </i>
+    Показати більше
+   </div>
+   <div class="subscriptions">
+    <div class="subscription-item">
+     <img alt="WAS: Популярна наука" height="24" src="https://storage.googleapis.com/a1aa/image/RievFE6u1J0aIqVapRJpeC5Y5puE6CksX6L5aGeDeNtmP4TOB.jpg" width="24"/>
+     WAS: Популярна наука
+    </div>
+    <div class="subscription-item">
+     <img alt="TheDRZJ" height="24" src="https://storage.googleapis.com/a1aa/image/4aEjbd2wDjaWLhPZ4BTR0CMeY7lp3683v8iRAcA34Is7BfkTA.jpg" width="24"/>
+     TheDRZJ
+    </div>
+    <div class="subscription-item">
+     <img alt="ROZETKA" height="24" src="https://storage.googleapis.com/a1aa/image/23r27tZzmnJQB1trxDv3W9TPJV1hldMJvofaQwDXG686BfkTA.jpg" width="24"/>
+     ROZETKA
+    </div>
+    <div class="subscription-item">
+     <img alt="Алексей Макаренко" height="24" src="https://storage.googleapis.com/a1aa/image/RlEqqYMbfH3TKie9MEd5A5eGQA5RtMAy4hOj3NwX96AlH8JnA.jpg" width="24"/>
+     Алексей Макаренко
+    </div>
+    <div class="subscription-item">
+     <img alt="ROZETKA GAME" height="24" src="https://storage.googleapis.com/a1aa/image/4ZZy8LwcDqZvFtX3YEBj8vS9SL6M8zusZ1I63khD8jd8gP5E.jpg" width="24"/>
+     ROZETKA GAME
+    </div>
+    <div class="subscription-item">
+     <img alt="Хащі" height="24" src="https://storage.googleapis.com/a1aa/image/oVtlPBleB2TyJa5Mjn1snEM87VpLemCubb0pJrZyVzu2DeJnA.jpg" width="24"/>
+     Хащі
+    </div>
+    <div class="subscription-item">
+     <img alt="Клятий раціоналіст" height="24" src="https://storage.googleapis.com/a1aa/image/YnjrAI6FpupSEFuOOyPOOWyek9cI9s1Z9ebnSw2yf19cH8JnA.jpg" width="24"/>
+     Клятий раціоналіст
+    </div>
+    <div class="subscription-item">
+     <i class="fas fa-ellipsis-h">
+     </i>
+     Показати ще 24
+    </div>
+   </div>
+  </div>
+  <div class="content">
+   <div class="categories">
+    <div class="category active">
+     Усі
+    </div>
+    <div class="category">
+     Ігри
+    </div>
+    <div class="category">
+     Музика
+    </div>
+    <div class="category">
+     Пряма трансляція
+    </div>
+    <div class="category">
+     Новини
+    </div>
+    <div class="category">
+     Пригодницький бойовик
+    </div>
+    <div class="category">
+     Образотворчий мистецтва
+    </div>
+    <div class="category">
+     Мультфільми
+    </div>
+    <div class="category">
+     Нещодавно завантаження
+    </div>
+    <div class="category">
+     Ви дивилися
+    </div>
+   </div>
+   <div class="videos">
+    <div class="video">
+     <img alt="Video Thumbnail" height="180" src="https://storage.googleapis.com/a1aa/image/W1f4YC5i3QWpZKeI5jPkRZLITf5Cq12Gbok548TuRI7mH8JnA.jpg" width="320"/>
+     <div class="details">
+      <div class="title">
+       Як збільшився борг України за час великої війни? | Економічна правда
+      </div>
+      <div class="channel">
+       Економічна правда
+      </div>
+      <div class="views">
+       78 тис. переглядів • 1 місяць тому
+      </div>
+     </div>
+    </div>
+    <div class="video">
+     <img alt="Video Thumbnail" height="180" src="https://storage.googleapis.com/a1aa/image/W1f4YC5i3QWpZKeI5jPkRZLITf5Cq12Gbok548TuRI7mH8JnA.jpg" width="320"/>
+     <div class="details">
+      <div class="title">
+       Що бісить Журналістку | Марія Малевська
+      </div>
+      <div class="channel">
+       LUKI
+      </div>
+      <div class="views">
+       70 тис. переглядів • 4 місяці тому
+      </div>
+     </div>
+    </div>
+    <div class="video">
+     <img alt="Video Thumbnail" height="180" src="https://storage.googleapis.com/a1aa/image/W1f4YC5i3QWpZKeI5jPkRZLITf5Cq12Gbok548TuRI7mH8JnA.jpg" width="320"/>
+     <div class="details">
+      <div class="title">
+       Яке овочі вирощували предки? // Дробышевский...
+      </div>
+      <div class="channel">
+       RTVI Розваги
+      </div>
+      <div class="views">
+       276 тис. переглядів • 11 місяців тому
+      </div>
+     </div>
+    </div>
+    <div class="video">
+     <img alt="Video Thumbnail" height="180" src="https://storage.googleapis.com/a1aa/image/W1f4YC5i3QWpZKeI5jPkRZLITf5Cq12Gbok548TuRI7mH8JnA.jpg" width="320"/>
+     <div class="details">
+      <div class="title">
+       How to Get Stuff Done When You Have ADHD
+      </div>
+      <div class="channel">
+       How to ADHD
+      </div>
+      <div class="views">
+       1,2 млн переглядів • 7 років тому
+      </div>
+     </div>
+    </div>
+    <div class="video">
+     <img alt="Video Thumbnail" height="180" src="https://storage.googleapis.com/a1aa/image/W1f4YC5i3QWpZKeI5jPkRZLITf5Cq12Gbok548TuRI7mH8JnA.jpg" width="320"/>
+     <div class="details">
+      <div class="title">
+       ОКУПАНТИ-САДИСТИ ІДЕНТИФІКОВАНО
+      </div>
+      <div class="channel">
+       BIHUS Info
+      </div>
+      <div class="views">
+       90 тис. переглядів • 1 день тому
+      </div>
+     </div>
+    </div>
+    <div class="video">
+     <img alt="Video Thumbnail" height="180" src="https://storage.googleapis.com/a1aa/image/W1f4YC5i3QWpZKeI5jPkRZLITf5Cq12Gbok548TuRI7mH8JnA.jpg" width="320"/>
+     <div class="details">
+      <div class="title">
+       Neo-Brutalism: The Rising Design Trend
+      </div>
+      <div class="channel">
+       Halo Lab
+      </div>
+      <div class="views">
+       242 переглядів • 1 день тому
+      </div>
+     </div>
+    </div>
+    <div class="video">
+     <img alt="Video Thumbnail" height="180" src="https://storage.googleapis.com/a1aa/image/W1f4YC5i3QWpZKeI5jPkRZLITf5Cq12Gbok548TuRI7mH8JnA.jpg" width="320"/>
+     <div class="details">
+      <div class="title">
+       Лесь Подерянський Про бобра
+      </div>
+      <div class="channel">
+       Лесь Подерянський
+      </div>
+      <div class="views">
+       434 тис. переглядів • 5 років тому
+      </div>
+     </div>
+    </div>
+    <div class="video">
+     <img alt="Video Thumbnail" height="180" src="https://storage.googleapis.com/a1aa/image/W1f4YC5i3QWpZKeI5jPkRZLITf5Cq12Gbok548TuRI7mH8JnA.jpg" width="320"/>
+     <div class="details">
+      <div class="title">
+       Unveiling the Amazing Secret for Drawing the Perfect Portrait...
+      </div>
+      <div class="channel">
+       One pencil tutorial
+      </div>
+      <div class="views">
+       1,3 млн переглядів • 3 місяці тому
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

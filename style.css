@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'BlackCraft';
+    src: url('resource/fonts/Blackcraft.woff2') format('woff2'),
+         url('resource/fonts/Blackcraft.woff') format('woff'),
+         url('resource/fonts/Blackcraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'BlackCraft', sans-serif;
+    margin: 0;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 0px;
+    color: white;
+    border-bottom: 1px solid #272727;
+}
+
+
+.logobtn {
+    font-family: 'BlackCraft', sans-serif;
+    font-size: 50px;
+    display: flex;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.logobtn:hover {
+    transform: scale(1.1);
+}
+
+.logobtn:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.main img{
+    width: 450px;
+    height: 450px;
+    padding: 30px 50px;
+}
+
+.text{
+    color: white;
+    padding: 30px;
+}
+
+.text h1{
+    font-size: 70px;
+}
+.text h2{
+    font-size: 50px;
+}
+.text h3{
+    font-size: 30px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.buttons button{
+    font-family: 'BlackCraft', sans-serif;
+    color: white;
+    margin-right: 200px;
+    font-size: 40px;
+    background-color: initial;
+    border: 0;
+    cursor: pointer;
+    transition: font-size 0.2s ease;
+}
+
+.buttons button:hover{
+    font-size: 45px;
+}
+
+.buttons button:active{
+    font-size: 40px;
+    transition: font-size 0.1s ease;
+}
+
+.buttons button:last-child{
+    margin: 0;
+}
