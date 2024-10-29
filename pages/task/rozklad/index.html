@@ -1,0 +1,289 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skedy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://storage.googleapis.com/a1aa/image/pGIJMIu15x5bIBzBUSudI7NNyGegNeSwsNJJMXg4x3dVi7mTA.jpg" alt="Logo" width="40" height="40">
+            <h1>Skedy</h1>
+        </div>
+        <div class="icons">
+            <i class="fas fa-sync-alt"></i>
+            <i class="fas fa-calendar-alt"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </div>
+    <div class="tabs">
+        <button class="active" onclick="showDay('monday')">ПОНЕДІЛОК</button>
+        <button onclick="showDay('tuesday')">ВІВТОРОК</button>
+        <button onclick="showDay('wednesday')">СЕРЕДА</button>
+        <button onclick="showDay('thursday')">ЧЕТВЕР</button>
+        <button onclick="showDay('friday')">П'ЯТНИЦЯ</button>
+        <button onclick="showDay('saturday')">СУБОТА</button>
+        <button onclick="showDay('sunday')">НЕДІЛЯ</button>
+    </div>
+    <div class="content" id="monday">
+        <div class="card">
+            <h2>Вища математика</h2>
+            <p>1</p>
+            <p>Білоусова Світлана Вікторівна</p>
+            <div class="time">
+                <span>08:00 - 09:35</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Дослідження операцій</h2>
+            <p>2</p>
+            <p>Бажан Тетяна Олександрівна</p>
+            <div class="time">
+                <span>09:45 - 11:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Об'єктно-орієнтоване програмування</h2>
+            <p>3</p>
+            <p>Вишинський Олександр Вікторович</p>
+            <div class="time">
+                <span>11:45 - 13:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Філософія</h2>
+            <p>4</p>
+            <p>Ярошовець Тетяна Іванівна</p>
+            <div class="time">
+                <span>13:30 - 15:05</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="tuesday" style="display: none;">
+        <div class="card">
+            <h2>Фізика</h2>
+            <p>1</p>
+            <p>Іванов Іван Іванович</p>
+            <div class="time">
+                <span>08:00 - 09:35</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Хімія</h2>
+            <p>2</p>
+            <p>Петров Петро Петрович</p>
+            <div class="time">
+                <span>09:45 - 11:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Біологія</h2>
+            <p>3</p>
+            <p>Сидоров Сидор Сидорович</p>
+            <div class="time">
+                <span>11:45 - 13:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Географія</h2>
+            <p>4</p>
+            <p>Кузнецов Кузьма Кузьмич</p>
+            <div class="time">
+                <span>13:30 - 15:05</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="wednesday" style="display: none;">
+        <div class="card">
+            <h2>Історія</h2>
+            <p>1</p>
+            <p>Леонов Леон Леонович</p>
+            <div class="time">
+                <span>08:00 - 09:35</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Література</h2>
+            <p>2</p>
+            <p>Михайлов Михайло Михайлович</p>
+            <div class="time">
+                <span>09:45 - 11:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Музика</h2>
+            <p>3</p>
+            <p>Николаев Николай Николаевич</p>
+            <div class="time">
+                <span>11:45 - 13:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Малювання</h2>
+            <p>4</p>
+            <p>Олександров Олександр Олександрович</p>
+            <div class="time">
+                <span>13:30 - 15:05</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="thursday" style="display: none;">
+        <div class="card">
+            <h2>Фізкультура</h2>
+            <p>1</p>
+            <p>Павлов Павло Павлович</p>
+            <div class="time">
+                <span>08:00 - 09:35</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Трудове навчання</h2>
+            <p>2</p>
+            <p>Романов Роман Романович</p>
+            <div class="time">
+                <span>09:45 - 11:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Інформатика</h2>
+            <p>3</p>
+            <p>Семенов Семен Семенович</p>
+            <div class="time">
+                <span>11:45 - 13:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Астрономія</h2>
+            <p>4</p>
+            <p>Тарасов Тарас Тарасович</p>
+            <div class="time">
+                <span>13:30 - 15:05</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="friday" style="display: none;">
+        <div class="card">
+            <h2>Економіка</h2>
+            <p>1</p>
+            <p>Ульянов Ульян Ульянович</p>
+            <div class="time">
+                <span>08:00 - 09:35</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Правознавство</h2>
+            <p>2</p>
+            <p>Федоров Федір Федорович</p>
+            <div class="time">
+                <span>09:45 - 11:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Соціологія</h2>
+            <p>3</p>
+            <p>Харитонов Харитон Харитонович</p>
+            <div class="time">
+                <span>11:45 - 13:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Психологія</h2>
+            <p>4</p>
+            <p>Цвєтков Цвєтко Цвєткович</p>
+            <div class="time">
+                <span>13:30 - 15:05</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="saturday" style="display: none;">
+        <div class="card">
+            <h2>Філософія</h2>
+            <p>1</p>
+            <p>Чайковський Чайко Чайкович</p>
+            <div class="time">
+                <span>08:00 - 09:35</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Релігієзнавство</h2>
+            <p>2</p>
+            <p>Шевченко Шевченко Шевченкович</p>
+            <div class="time">
+                <span>09:45 - 11:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Етика</h2>
+            <p>3</p>
+            <p>Щербаков Щербак Щербакович</p>
+            <div class="time">
+                <span>11:45 - 13:20</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Естетика</h2>
+            <p>4</p>
+            <p>Юрченко Юрій Юрійович</p>
+            <div class="time">
+                <span>13:30 - 15:05</span>
+                <span>Дистанц.</span>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="sunday" style="display: none;">
+        <div class="card">
+            <h2>Вихідний день</h2>
+            <p>Немає занять</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <i class="fas fa-calendar-day"></i>
+            <p>День</p>
+        </div>
+        <div>
+            <i class="fas fa-calendar-week"></i>
+            <p>Тиждень</p>
+        </div>
+    </div>
+    <script>
+        function showDay(day) {
+            const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+            days.forEach(d => {
+                document.getElementById(d).style.display = 'none';
+            });
+            document.getElementById(day).style.display = 'block';
+            const buttons = document.querySelectorAll('.tabs button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            document.querySelector(`.tabs button[onclick="showDay('${day}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
