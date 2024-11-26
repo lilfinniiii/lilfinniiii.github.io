@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Скрыть прокрутку */
+}
+
+.background {
+    background-image: url('https://img.itch.zone/aW1nLzEzNzczMjU3LmdpZg==/original/W%2Fd8%2BO.gif'); /* Статический фон с природой */
+    background-size: cover; /* Заполнение фона */
+    height: 100vh; /* Высота фона */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Выравнивание покемонов по нижнему краю */
+    position: relative;
+}
+
+.pokemon-container {
+    position: relative;
+}
+
+.pokemon {
+    width: 150px; /* Размер покемонов */
+    position: absolute;
+    bottom: 20px; /* Поднимаем покемонов над "землей" */
+    
+}
+
+.moltres { 
+    width: 200px;
+    position: absolute;
+    bottom: 500px;
+}
+
+#raichu1 {
+    animation-delay: 0s; /* Первому покемону не устанавливаем задержку */
+    left: 0; /* Начальная позиция */
+    animation: run 4s steps(180) infinite; /* Анимация бега */
+}
+
+#raichu2 {
+    animation-delay: 0s; /* Второму покемону устанавливаем задержку */
+    left: 1; /* Начальная позиция */
+    animation: run1 4s steps(180) infinite; /* Анимация бега */
+}
+
+#moltres{
+    animation-delay: 0s; /* Первому покемону не устанавливаем задержку */
+    left: 1; /* Начальная позиция */
+    animation: fly 7s steps(200) infinite; /* Анимация бега */
+}
+@keyframes run {
+    from {
+        transform: translateX(100vw); 
+    }
+
+    to {
+        transform: translateX(100vw); 
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes run1 {
+    from {
+        transform: translateX(-100vw); /* Начальная позиция */
+    }
+
+    to {
+        transform: translateX(-100vw); /* Перемещение на 100% ширины экрана */
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fly {
+    from {
+        transform: translateX(100vw); /* Начальная позиция */
+    }
+
+    to {
+        transform: translateX(-100vw);
+        
+    }
+}
