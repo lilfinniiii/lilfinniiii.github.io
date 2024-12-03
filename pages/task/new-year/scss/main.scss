@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'blocks/header/header';
+@import 'blocks/card/card';
+@import 'blocks/footer/footer';
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  background-color: $secondary-color;
+}
