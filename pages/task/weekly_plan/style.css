@@ -1,3 +1,4 @@
+/* Основные стили */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -16,6 +17,7 @@ body {
     gap: 20px;
 }
 
+/* Заголовок */
 header {
     text-align: center;
 }
@@ -26,6 +28,7 @@ header h1 {
     text-transform: uppercase;
 }
 
+/* Информация о неделе */
 .week-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -40,9 +43,15 @@ header h1 {
     font-size: 16px;
 }
 
+/* Основное содержимое */
 .planner-body {
     display: grid;
     grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
+.left-panel {
+    display: grid;
     gap: 20px;
 }
 
@@ -57,30 +66,36 @@ header h1 {
 .left-panel ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .left-panel li {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
     margin-bottom: 10px;
 }
 
 .left-panel input[type="checkbox"] {
-    margin-right: 10px;
+    margin-top: 3px;
 }
 
 .left-panel input[type="text"] {
-    flex: 1;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
 }
 
+/* Сетка для дней недели */
 .weekly-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
     gap: 10px;
+    grid-template-areas:
+        "monday tuesday wednesday"
+        "thursday friday weekend";
 }
 
 .day {
@@ -88,8 +103,8 @@ header h1 {
     border-radius: 5px;
     padding: 10px;
     background: #f5f5f5;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .day h3 {
@@ -100,8 +115,52 @@ header h1 {
     padding-bottom: 5px;
 }
 
+.weekly-grid .monday {
+    grid-area: monday;
+}
+
+.weekly-grid .tuesday {
+    grid-area: tuesday;
+}
+
+.weekly-grid .wednesday {
+    grid-area: wednesday;
+}
+
+.weekly-grid .thursday {
+    grid-area: thursday;
+}
+
+.weekly-grid .friday {
+    grid-area: friday;
+}
+
+.weekly-grid .weekend {
+    grid-area: weekend;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.weekend .saturday,
+.weekend .sunday {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.weekend .saturday h3,
+.weekend .sunday h3 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+}
+
+
 .day textarea {
-    flex: 1;
     resize: none;
     padding: 5px;
     border: 1px solid #ccc;
@@ -110,6 +169,7 @@ header h1 {
     background: #fff;
 }
 
+/* Адаптивность */
 @media (max-width: 768px) {
     .week-info {
         grid-template-columns: 1fr;
@@ -119,5 +179,11 @@ header h1 {
     }
     .weekly-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .weekly-grid {
+        grid-template-columns: 1fr;
     }
 }
