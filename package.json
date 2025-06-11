@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ваш-username.github.io/clicker-game",
+  "homepage": "lilfinniiii.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
